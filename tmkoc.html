@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gada Electronics</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('image_tmkoc.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      /* Previously had a color here but was missing background-color */
+      background-color: rgba(255, 204, 0, 0.4); 
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header, section, footer {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.75);
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: 
+center; background-color: rgba(255, 255, 255, 0.75); padding: 10px 20px;">
+    <div class="logo" style="margin: 0; padding: 0;">
+      <img src="tmkoc_logo.webp" alt="Gada Electronics Logo" style="height: 60px; display: block;">
+    </div>
+
+
+
+   <nav>
+  <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+    <li><a href="#episode" style="text-decoration: none; color: #333; font-weight: bold; font-size: 16px;">Episode 578</a></li>
+    
+  </ul>
+</nav>
+
+
+
+  </header>
+
+
+
+
+
+
+  <section id="episode" style="margin-top: 0; padding: 20px; text-align: center;">
+    <h2>Episode 578: 
+    <p>In this episode, Natu Kaka suggests starting a website named 
+      <strong>GadaElectronics.com</strong>
+    </p></h2>
+
+    <div class="video-container" style="margin-top: 15px;">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/2dly649txjE?start=300&autoplay=1&mute=1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="redit" style="margin-top: 0; padding: 20px; text-align: center;">
+    
+    <p>
+  Follow TMKOC Reddit for amazing memes:
+  <a href="https://www.reddit.com/r/TMKOC/" target="_blank">
+    https://www.reddit.com/r/TMKOC/
+  </a>
+</p>
+
+
+   
+  </section>
+
+
+<section id="episode" style="margin-top: 0; padding: 20px; text-align: center;">
+  <p>
+    View the TMKOC Digital Brochure below:
+  </p>
+
+  <iframe 
+    src="TMKOC Guide.pdf" 
+    width="100%" 
+    height="600px"
+    style="border: none; margin-top: 20px;">
+  </iframe>
+</section>
+
+
+
+
+
+
+
+
+  <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
+    <p>Made by Bagha currently Sethji has not given enough funds to buy custom domain name please request Sethji to give money to make gadaelectronics.com a success!</p>
+  </footer>
+
+
+
+<script>
+  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetID = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetID);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        history.replaceState(null, null, ' '); // Remove hash from URL without reload
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
